@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Wanna mock your Classmates?</span>
+    <span style="flex: 1 1;"></span>
+    <button mat-raised-button color="accent">
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-card>
+  <mat-card-title>Unsay gibuhat?</mat-card-title>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Gi</mat-label>
+      <input matInput [(ngModel)]="gi" />
+    </mat-form-field>
+
+    <br>
+
+    <mat-card-title>Kinsa mani siya?</mat-card-title>
+    <mat-form-field>
+      <mat-label>Ni</mat-label>
+      <input matInput [(ngModel)]="ni" />
+    </mat-form-field>
+
+    <br>
+
+    <mat-card-title>Unsa ang iyang gi {{ gi }} ?</mat-card-title>
+    <mat-form-field>
+      <mat-label>Ang</mat-label>
+      <input matInput [(ngModel)]="ang" />
+    </mat-form-field>
+
+    <br>
+
+    <mat-card-title>Kang kinsa man to?</mat-card-title>
+    <mat-form-field>
+      <mat-label>Ni</mat-label>
+      <input matInput [(ngModel)]="ni2" />
+    </mat-form-field>
+
+
+  </mat-card-content>
+</mat-card>
+
+<h1>
+  Gi {{ gi }} ni {{ ni }} ang {{ ang }} ni {{ ni2 }} <br>
+</h1>
